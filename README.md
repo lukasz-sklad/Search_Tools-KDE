@@ -22,7 +22,7 @@ Aby skrypty działały poprawnie, zainstaluj:
 - `fd-find` (polecenie `fd`)
 - `ripgrep` (polecenie `rg`)
 - `kdialog` (standard w KDE)
-- **coreutils ✔** (podstawowe narzędzia systemowe, np. zainstalowane przez Homebrew na SteamOS)
+- **coreutils ✔** (narzędzia systemowe, np. zainstalowane przez Homebrew, APT)
 
 ---
 
@@ -31,16 +31,16 @@ Aby skrypty działały poprawnie, zainstaluj:
 Projekt opiera się na standardowych poleceniach systemowych. Warto znać różnicę między dostępnymi implementacjami:
 
 ### 1. coreutils ✔
-To podstawowy pakiet od projektu GNU. Na systemach takich jak **SteamOS**, po zainstalowaniu przez Homebrew, to właśnie tutaj znajduje się polecenie **`vdir`** (zaawansowana wersja `ls`). Jest to najbardziej sprawdzona implementacja, na której bazują te skrypty.
+To pakiet od projektu GNU. Na systemach takich jak **Debian**, **SteamOS**, **macOS** po zainstalowaniu, to tutaj właśnie znajduje się polecenie **`vdir`**. Jest to najbardziej sprawdzona implementacja, na której bazują te skrypty.
 
 ### 2. uutils-coreutils
 To nowoczesna re-implementacja `coreutils` napisana w języku **Rust**. Choć dąży do pełnej kompatybilności, w specyficznych zastosowaniach parametry mogą się różnić od klasycznego wydania GNU.
 
 > [!TIP]
 > **Ciekawostka o przedrostku "g":**
-> Instalując narzędzia GNU przez Homebrew (szczegóły szczególnie istotne na macOS lub przy specyficznej konfiguracji na SteamOS), możesz zauważyć, że polecenia mają przedrostek **g** (np. `gcp`, `gmv`, `gvdir`). Homebrew robi to domyślnie, aby nie kolidować z natywnymi narzędziami systemu. Możesz jednak skonfigurować swój shell (zmienną `PATH`), aby używać ich bez przedrostka "g" jako domyślnych wersji.
+> Instalując narzędzia GNU przez Homebrew (szczegóły szczególnie istotne na macOS lub przy specyficznej konfiguracji na SteamOS), możesz zauważyć, że polecenia mają przedrostek **g** (np. `gcp`, `gmv`, `gvdir`). Homebrew robi to domyślnie, aby nie kolidować z natywnymi narzędziami systemu.
 
 ---
 
 ## Użytkowanie
-Po instalacji, kliknij prawym przyciskiem myszy na dowolny folder w menedżerze plików Dolphin. W menu **"Narzędzia wyszukiwania"** (lub "Search Tools") znajdziesz wszystkie dostępne akcje.
+Po instalacji, kliknij prawym przyciskiem myszy na dowolny folder w menedżerze plików Dolphin. W menu **"Narzędzia wyszukiwania"** znajdziesz wszystkie dostępne akcje.
