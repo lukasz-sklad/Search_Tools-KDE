@@ -1,0 +1,34 @@
+[Desktop Entry]
+Actions=Find-Name;Grep-Content;Large-Files;Fix-Index;
+Icon=system-search
+MimeType=all/all;
+Type=Service
+X-KDE-Priority=TopLevel
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin,all/all
+X-KDE-StartupNotify=false
+X-KDE-Submenu=Narzędzia wyszukiwania
+X-KDE-Submenu[pl]=Narzędzia wyszukiwania
+
+[Desktop Action Find-Name]
+Exec=konsole -e bash PLACEHOLDER_PATH/Search_Tools-find-name.sh %F
+Icon=edit-find
+Name=Szukaj plików po nazwie
+Name[pl]=Szukaj plików po nazwie
+
+[Desktop Action Grep-Content]
+Exec=konsole -e bash PLACEHOLDER_PATH/Search_Tools-grep-content.sh %F
+Icon=text-field
+Name=Szukaj tekstu w plikach
+Name[pl]=Szukaj tekstu w plikach
+
+[Desktop Action Large-Files]
+Exec=konsole -e bash PLACEHOLDER_PATH/Search_Tools-large-files.sh %F
+Icon=disk-quota-high
+Name=Szukaj dużych plików
+Name[pl]=Szukaj dużych plików
+
+[Desktop Action Fix-Index]
+Exec=konsole -e bash PLACEHOLDER_PATH/Search_Tools-fix-index.sh %F
+Icon=view-refresh
+Name=Napraw wyszukiwanie (Indeksuj tutaj)
+Name[pl]=Napraw wyszukiwanie (Indeksuj tutaj)
